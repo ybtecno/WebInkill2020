@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>INKILL</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Color de la aplicacion -->
+  <meta name="theme-color" content="#096b15"/>
+
+  <!-- Optimizacion para movil -->
+  <meta name="MobileOptimized" content="width"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Meta etiquetas PWA para Apple -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="apple-touch-startup-image" href="img/favicon.png">
+
+  <!-- Configuarcion General PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.11.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+    <!--==========================
+                Header
+    ============================-->
+    <header id="header">
+        <div class="container-fluid">
+
+          <div id="logo" class="pull-left">
+              <h1><a href="#intro" class="scrollto">INKILL</a></h1>
+              <!-- <h1><a href="#intro" class="scrollto">Tu lugar secreto</a></h1>         -->
+          </div>
+
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="#intro">Inicio</a></li>
+                <li class="menu-has-children"><a href="#about">Nuestra línea</a>
+                <ul>
+                    <li><a href="html/comunicados.html">Polleras</a></li>
+                    <li><a href="html/reseniaHistorica.html">Vestidos</a></li>
+                    <li><a href="html/proyectos.html">Pantalones</a></li>
+                    <li><a href="html/instalaciones.html">Blusas</a></li>         
+                </ul>
+                </li>
+                <li class="menu-has-children"><a href="#services">Promos</a>
+                <ul>
+                    <li><a href="html/rugby.html">Vestidos</a></li>
+                    <li><a href="html/hockey.html">Remeras</a></li>
+                    <li><a href="html/tenis.html">Pantalones</a></li>
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="html/eventosSociales.html">Shorts</a></li>
+                </ul>
+                </li>
+                <!-- <li class="menu-has-children"><a href="#services">Eventos</a>
+                    <ul>
+                        
+                        <li><a href="#">Actividad Verano</a></li>
+                    </ul>
+                </li> -->
+                <li><a href="#">Galería</a></li>
+                <li class="menu-has-children"><a href="#footer">Contacto</a>
+                <ul>
+                    <li><a href="#">Redes Sociales</a></li>
+                    <li><a href="#">Enviar Correo</a></li>
+                    <li><a href="#">Ubicaciones</a></li>
+                </ul>
+                </li>
+                
+            </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
+
+    <!--==========================
+            Intro Section
+    ============================-->
+    <section id="intro">
+      <div class="intro-container">
+          <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+          <ol class="carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active">
+              <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+              <div class="carousel-container">
+                  <div class="carousel-content">
+                  <h2 class="nombre">INKILL</h2>
+                  <h2>Tu lugar secreto</h2>
+                  <p>"Talles reales para la mujer que sos"</p>
+                  <a href="#featured-services" class="btn-get-started scrollto">Ingresá</a>
+                  </div>
+              </div>
+              </div>
+
+              <div class="carousel-item">
+              <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+              <div class="carousel-container">
+                  <div class="carousel-content">
+                  <h2 class="nombre">INKILL</h2>
+                  <!-- <p>Único Club del NOA con 2 campos de 18 hoyos y 600 hándicaps nacionales. Torneos con una media de 150 golfistas por evento.</p> -->
+                  <a href="#featured-services" class="btn-get-started scrollto">Ingresá</a>
+                  </div>
+              </div>
+              </div>
+
+              <div class="carousel-item">
+              <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
+              <div class="carousel-container">
+                  <div class="carousel-content">
+                  <h2 class="nombre">INKILL</h2>
+                  <!-- <p>Club de Hockey con su campo de césped sintético iluminado. Más de 350 jugadoras inscriptas. Todas las divisiones. Se practica desde 1994. Ingreso de las niñas a partir de los 5 años de edad.</p> -->
+                  <a href="#featured-services" class="btn-get-started scrollto">Ingresá</a>
+                  </div>
+              </div>
+              </div>
+
+              <div class="carousel-item">
+              <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
+              <div class="carousel-container">
+                  <div class="carousel-content">
+                  <h2 class="nombre">INKILL</h2>
+                  <!-- <p class="text-justify  ">Club Hípico con dos pistas de salto (césped y arena). Pista circular para trabajos a la cuerda. Escuela de Equitació (adiestramiento y salto), clases particulares. Torneos locales y regionales.  Anualmente hay dos torneos clásicos de participación nacional : Torneo Regional del Norte (en los meses Junio y/o Julio) y Torneo Derby que se realiza finalizando la temporada. Salón de eventos.</p> -->
+                  <a href="#featured-services" class="btn-get-started scrollto">Ingresá</a>
+                  </div>
+              </div>
+              </div>
+
+              <div class="carousel-item">
+              <div class="carousel-background"><img src="img/intro-carousel/5.jpg" alt=""></div>
+              <div class="carousel-container">
+                  <div class="carousel-content">
+                  <h2 class="nombre">INKILL</h2>
+                  <!-- <p class="text-justify">Club de Rugby con su equipo en Primera División y sus divisiones inferiores. Ingreso de los niños a partir de los 5 años de edad. Más de 500 jugadores inscriptos. Se practica desde 1991. Gimnasio de uso gratis para los socios del club, actualmente nos encontramos abocados a reglamentar este uso y los horarios disponibles, en breves te explicaremos como será…</p> -->
+                  <a href="#featured-services" class="btn-get-started scrollto">Ingresá</a>
+                  </div>
+              </div>
+              </div>
+
+          </div>
+
+          <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+
+          </div>
+      </div>
+    </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box logo">
+            <img src="img/featured-services/logo.jpg" alt="">
+            <h4 class="title"><a href="">INKILL</a></h4>
+            <p class="description">* Talles reales para la mujer que sos. <br>
+            * La mejor calidad. <br>
+            * Excelente precio. <br>
+            * Todas las formas de pago. </p>
+          </div>
+
+          <div class="col-lg-4 box box-bg sede">
+            <img src="img/featured-services/imginstalsedes02.jpg" width="48" alt="">
+            <h4 class="title"><a href="">Local</a></h4>
+            <p class="description">* Local a la calle <br> * Todas las comodidas y refrigerado para que estes cómoda. <br> * Todos los precios a la vista e increíbles descuentos en efectivo.</p>
+          </div>
+
+          <div class="col-lg-4 box sociales">
+              <img src="img/featured-services/imgsociales.jpg" width="48" alt="">
+            <h4 class="title"><a href="">Nos podes ubicar en:</a></h4>
+            <p class="description">LOBO DE L VEGA 13 - LOCAL 113 Yerba Buena, Tucumán. <br> https://www.instagram.com/inkill.fem/ <br> https://g.page/inkill-talles-reales?share <br> @inkill.femenina </p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container-fluid">
+
+        <header class="section-header">
+          <h3>Acerca Nuestro</h3>
+          <p>INKILL FUÉ PENSADA PARA LA MUJER REAL AUTENTICA, EMPRENDEDORA, AUDAZ, <br> POR ESO NOS DEDICAMOS A BRINDARTE LA MEJOR INDUMENTARIA FEMENINA CON TALLES REALES DEL 40 AL 60. <br> PONIENDO ESPECIAL ÉNFASIS EN LA CALIDAD.
+          DESCUBRI TU LOOK AQUI ENCONTRARÁS TODO PARA SER VOS CON LA MEJOR CALIDAD. <br>
+          NO SOMOS UNA MARCA QUE UNIFORMA SOMOS PARTE DE VOS, NO REPETIMOS MODELOS... NO TE UNIFORMES</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-plan.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="html/comunicados.html">Comunicados</a></h2>
+              <p>
+                Toda la información institucional, comunicados directivos...
+              </p>
+              <button type="button" class="btn btn-success ml-2 mb-2">Informate</button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-vision.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-people-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Calendario Deportivo</a></h2>
+              <p>
+                Todas las actividades deportivas, tanto el fixture como los resultados.
+              </p>
+              <button type="button" class="btn btn-success ml-2 mb-2"> Enterate </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/tucuman-rugby-club.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye -outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Instalaciones</a></h2>
+              <p>
+                Todas las intalaciones de nuestro club a tu alcance en esta sección.
+              </p>
+              <button type="button" class="btn btn-success ml-2 mb-2">Conocelas</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Novedades</h3>
+          <!-- <p>Todas las novedades de nuestro club, tanto deportivas como sociales.</p> -->
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 box box-rugby wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><img src="img/rugby2.png" width="40" alt=""></div>
+            <h4 class="title">Rugby</h4>
+            <p class="description"><strong>Pablo Avellaneda </strong> fue elegido jugador revelación por la Unión. ¡Felicitaciones! 
+              <button class="btn btn-sm" type="button"><a href="https://www.instagram.com/p/Bq0B5CPgLvy/" target="_blank"> Leer más</a></button></p>
+              <p class="description"><strong>Tomás Albornoz </strong> fue elegido mejor jugador de la temporada por la Unión. ¡Felicitaciones! 
+                <button class="btn btn-sm" type="button"><a href="https://www.instagram.com/p/BqzjX0JgyIL/" target="_blank"> Leer más</a></button></p>
+          </div>
+          <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><img src="img/hockeyportada.png" width="40" alt=""></div>
+            <h4 class="title">Hockey</h4>
+            <p class="description"><strong> Paulina Carrizo </strong>, la arquera de <strong>Tucumán Rugby Club </mark></strong> y el Seleccionado Tucumano Mayor de Hockey, junto con Victoria Sauze, integran la lista de jugadoras convocadas para Las Leonas...
+              <button class="btn btn-sm" type="button"><a href="http://atahockey.org/paulina-carrizo-fue-convocada-para-las-leonas/" target="_blank"> Leer más</a></button></p>
+          </div>
+          <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><img src="img/tenis01.png" width="40" alt=""></div>
+            <h4 class="title">Tenis</h4>
+            <p class="description">Las novedades del <strong>TENIS</strong> la podras encontrar aquí, resultados y próximos torneos, actividades, horarios, equipo profesores...
+              <button class="btn btn-sm" type="button"><a href="#" target="_blank"> Leer más</a></button></p>
+          </div>
+          <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><img src="img/futbolportada.png" width="40" alt=""></div>
+            <h4 class="title">Actividades</h4>
+            <p class="description">Las novedades de las <strong>Actividades</strong> la podras encontrar aquí, actividades de verano, sociales, etc...
+              <button class="btn btn-sm" type="button"><a href="#" target="_blank"> Leer más</a></button></p>
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+    <!-- #services -->
+
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 id="galeria" class="section-title">Galería </h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todas</li>
+              <li data-filter=".filter-rugby">Rugby</li>
+              <li data-filter=".filter-hockey">Hockey</li>
+              <li data-filter=".filter-tenis">Tenis</li>
+              <li data-filter=".filter-sociales">Sociales</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-rugby wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/imgportfolio-rugby1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/imgportfolio-rugby1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">TRC vs UNI</a></h4>
+                <p>Postales de una linda victoria frente a @universitariorugbytuc con la magia de @flortanjun gracias por tu gran trabajo!! </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-hockey wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/imgportfolio-hockey1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/imgportfolio-hockey1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">VERDE CAMPEÓN!!!</a></h4>
+                <p>Se coronó campeón en Primera e Intermedia del Torneo Anual Tucumano!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-rugby wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/imgportfolio-rugby2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/imgportfolio-rugby2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">TRC vs UNI</a></h4>
+                <p>Postales de una linda victoria frente a @universitariorugbytuc con la magia de @flortanjun gracias por tu gran trabajo!!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-sociales wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/sevenAlvarez.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/sevenAlvarez.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">SEVEN ÁLVAREZ</a></h4>
+                <p>En su IX edición el consagrado seven interno de Marcos Paz viene a traer alegrías de goles, trys y brindis de amigos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-hockey wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/imgportfolio-hockey2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/imgportfolio-hockey2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">VERDE CAMPEÓN!!!</a></h4>
+                <p>El plantel superior de rugby, le puso identidad y color al quincho.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-rugby wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/imgportfolio-rugby3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/imgportfolio-rugby3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">JUGADOR DE LA FECHA</a></h4>
+                <p>Fue para @tomialbornoz con un gran partido frente a @urcsalta con victoria para Tucuman Rugby! </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-sociales wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/capacitateMejores.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/capacitateMejores.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                  <h4><a href="#">Capacítate con los mejores!</a></h4>
+                  <p>Este jueves 29 y viernes 30 recibimos a el Staff de Western Province! Cupos limitados!!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-sociales wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/vecoVillegas.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/vecoVillegas.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">VECO VILLEGAS</a></h4>
+                <p>Este fin de semana se lleva a cabo la edición XXXII del Torneo Veco Villegas , con los clubes campeones de la categoría M19.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-hockey wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/imgportfolio-hockey3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/imgportfolio-hockey3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">VERDE CAMPEÓN!!!</a></h4>
+                <p>El plantel superior de rugby, le puso identidad y color al quincho.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-hockey wow fadeInUp" data-wow-delay="0.2s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="img/portfolio/imgportfolio-hockey4.jpg" class="img-fluid" alt="">
+                  <a href="img/portfolio/imgportfolio-hockey4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </figure>
+  
+                <div class="portfolio-info">
+                  <h4><a href="#">1RA BLANCA</a></h4>
+                  <p>Fotos del partido del lunes. En 1ra división, Tucuman blanco le ganó a cardenales por 1-0, con gol de Gabriela Herrera Frias.</p>
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Portfolio-Mobile Section
+    ============================-->
+    <section id="portfolio-mobile"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 id="galeria" class="section-title"> Galería </h3>
+        </header>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-rugby wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/imgportfolio-rugby1.jpg" class="img-fluid" alt="">
+                <!-- <a href="html/galeria.html" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a> -->
+                <a href="html/galeria.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                  <p>Aquí encontrarás todas las imágenes de nuestro club. </p>
+                  <a href="html/galeria.html"><button type="button" class="btn btn-success ml-2 mb-2 mt-2">  Ver la Galería </button></a>
+                  </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio-mobile -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Sponsors</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="">
+          <img src="img/clients/client-2.png" alt="">
+          <img src="img/clients/client-3.png" alt="">
+          <img src="img/clients/client-4.png" alt="">
+          <img src="img/clients/client-5.png" alt="">
+          <img src="img/clients/client-6.png" alt="">
+          <img src="img/clients/client-7.png" alt="">
+          <img src="img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Tucumán Rugby Club</h3>
+            <p>Estadio y complejo deportivo · Club deportivo</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Enlaces Útiles</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#intro">Inicio</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#about">Nosotros</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#">Actividades</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#">Terminos de Servicio</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#">Políticas de Privacidad </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contacto</h4>
+            <p>
+              Salas y Valdez 1500 <br>
+              Yerba Buena, Tucumánn <br>
+              Argentina. <br>
+              <strong>Teléfono:</strong> +54 0381 425-1148 <br>
+              <strong>Correo:</strong> tucrugby1@arnetbiz.com.ar <br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Nuestras Redes</h4>
+            <p>Seguinos para ver toda la actividad del club.</p>
+            <div class="social-links">
+                <a href="https://twitter.com/TucumanRugby" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/tucumanrugbyclub/?epa=SEARCH_BOX" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/tucumanrugbyoficial/?hl=es-la" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!-- <a href="#" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a> -->
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Tucumán Rugby Club </strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+        Power by <a href="#">YBTecno</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="main.js"></script>
+
+</body>
+</html>
